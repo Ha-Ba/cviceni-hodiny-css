@@ -2,16 +2,65 @@
 
 .digitalni__dvojtecka {
 	/* Zadefinuj a zde pak použij animaci blikání */
+animation-name: blikani;
+animation-duration: 1s; 
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+/*animation-direction: alternate;*/
 }
 
+@keyframes blikani {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
 
+/*===================== Analogové hodiny ========================*/
+
+
+/*=============================================*/
 /* Statický ukázkový čas 4:35:57 */
 .analogove__hodinova {
-	transform: rotate(137.5deg);
+	transform: rotate(1turn/*137.5deg*/);
+	animation-name: hodinova;
+	animation-duration: 360s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+
 }
+/*===========================================================*/
+@keyframes hodinova {
+0% {rotate: 0turn;}
+50% {rotate: 0.5turn;}
+100% {rotate: 1turn;}
+}
+/*==========================================================*/
 .analogove__minutova {
 	transform: rotate(215.7deg);
+	animation-name: minutova;
+	animation-duration: 36s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
+
+@keyframes minutova {
+0% {rotate: 0turn;}
+50% {rotate: 0.5turn;}
+100% {rotate: 1turn;}
+}
+/*============================================================*/
 .analogove__vterinova {
-	transform: rotate(342deg);
-}
+		transform: rotate(342deg);
+		animation-name: vterinova;
+		animation-duration: 3.6s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	
+	@keyframes vterinova {
+	0% {rotate: 0turn;}
+	50% {rotate: 0.5turn;}
+	100% {rotate: 1turn;}
+	}
+
+
